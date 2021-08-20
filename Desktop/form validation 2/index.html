@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+        integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>HTML 5 Form Validation</title>
+</head>
+
+<body class="d-flex align-items-center" style="height:100vh;">
+
+
+
+    <div class="container">
+        <div class="card">
+            <div class="card-header">
+                <h1 class="fs-3">Payment form example</h1>
+            </div>
+            <div class="card-body">
+                <div class="alert alert-danger" role="alert">
+                    A simple danger alert—check it out!
+                </div>
+                <form>
+                    <div class="row mb-3">
+                        <div class="col-5">
+                            <label for="exampleInputEmail1" class="form-label">Card #</label>
+                            <input type="email" class="form-control" id="exampleInputEmail1"
+                                aria-describedby="emailHelp" placeholder="xxxxxxxxxxxx">
+                        </div>
+                        <div class="col-3">
+                            <label for="exampleInputEmail1" class="form-label">CVC #</label>
+                            <input type="number" class="form-control" id="exampleInputEmail1"
+                                aria-describedby="emailHelp" placeholder="000">
+                        </div>
+                        <div class="col-4">
+                            <label for="exampleInputEmail1" class="form-label">Amount $</label>
+                            <input type="number" class="form-control" id="exampleInputEmail1"
+                                aria-describedby="emailHelp" placeholder="Amount">
+                        </div>
+                    </div>
+                    <div class="row mb-3">
+                        <div class="col-6">
+                            <label for="exampleInputEmail1" class="form-label">First Name</label>
+                            <input type="text" class="form-control" id="exampleInputEmail1"
+                                aria-describedby="emailHelp">
+                        </div>
+                        <div class="col-6">
+                            <label for="exampleInputEmail1" class="form-label">Last Name</label>
+                            <input type="text" class="form-control" id="exampleInputEmail1"
+                                aria-describedby="emailHelp">
+                        </div>
+                    </div>
+                    <div class="row mb-3">
+                        <div class="col-6">
+                            <label for="exampleInputEmail1" class="form-label">City</label>
+                            <input type="email" class="form-control" id="exampleInputEmail1"
+                                aria-describedby="emailHelp">
+                        </div>
+                        <div class="col-3">
+                            <label for="exampleInputEmail1" class="form-label">State</label>
+                            <select class="form-select" aria-label="Default select example">
+                                <option selected>Pick a State</option>
+                                <option value="1">Distrito Capital</option>
+                                <option value="2">Aragua</option>
+                                <option value="3">Mérida</option>
+                            </select>
+                        </div>
+                        <div class="col-3">
+                            <label for="exampleInputEmail1" class="form-label">Postal Code</label>
+                            <input type="email" class="form-control" id="exampleInputEmail1"
+                                aria-describedby="emailHelp">
+                        </div>
+                    </div>
+                    <div class="row mb-3">
+                        <div class="col-6 ">
+                            <label for="exampleInputEmail1" class="form-label">We accept:</label> <br>
+                            <div class="bg-secondary rounded px-2 py-1 text-white w-50">
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="inlineRadioOptions"
+                                        id="inlineRadio1" value="option1">
+                                    <label class="form-check-label" for="inlineRadio1"><i
+                                            class="fab fa-cc-mastercard"></i></label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="inlineRadioOptions"
+                                        id="inlineRadio2" value="option2">
+                                    <label class="form-check-label" for="inlineRadio2"><i
+                                            class="fab fa-cc-visa"></i></label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="inlineRadioOptions"
+                                        id="inlineRadio2" value="option2">
+                                    <label class="form-check-label" for="inlineRadio2"><i
+                                            class="fab fa-cc-diners-club"></i></label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="inlineRadioOptions"
+                                        id="inlineRadio2" value="option2">
+                                    <label class="form-check-label" for="inlineRadio2"><i
+                                            class="fab fa-cc-amex"></i></label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <label for="exampleInputEmail1" class="form-label">State</label>
+                            <div class="form-floating">
+                                <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2"
+                                    style="height: 100px"></textarea>
+                            </div>
+                            <p class="text-muted">Add any notes here.</p>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div class="card-footer justify-content-end">
+                <div class="my-2 float-end">
+                    <button type="button" class="btn btn-secondary ms-2">Cancel</button>
+                    <button type="button" class="btn btn-primary ms-2">Send</button>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+
+
+    <!-- ------------------------------------------------------------------------------------------------------------------------------- -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
