@@ -1,0 +1,74 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  width: 100%;
+  min-height: 100vh;
+  background-image: linear-gradient(to top, #30cfd0 0%, #330867 100%);
+  padding: 20px;
+}
+
+#cantidadDeCartas {
+  height: 30px;
+  border-radius: 5px;
+  width: 20%;
+  padding: 5px;
+}
+
+.btn {
+  height: 30px;
+  padding: 5px;
+  border-radius: 5px;
+  color: #fff;
+  background: #f7971e; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #ffd200,
+    #f7971e
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #ffd200,
+    #f7971e
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.container-row {
+  min-height: 50%;
+}
+
+.carta {
+  margin: 20px 10px;
+  height: 200px;
+  background: #fff;
+  width: 150px;
+  border-radius: 10px;
+  overflow: hidden;
+  display: inline-block;
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px,
+    rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+}
+
+.contenidoCarta {
+  margin: 10px;
+  font-size: 250%;
+  height: 100%;
+}
+
+.rellenoCartas {
+  height: 33.33%;
+}
+
+#contenedorNumber {
+  display: flex;
+  justify-content: center;
+}
+#contenedorIconDown {
+  float: right;
+}
+#contenedorIconDown p {
+  transform: rotate(180deg);
+}
